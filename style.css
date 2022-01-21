@@ -827,7 +827,7 @@ hr {
 .dish__title {
   margin-bottom: .3125rem;
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 900;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -845,13 +845,13 @@ hr {
   width: 100%;
   -webkit-transition: width .5s ease-in-out;
   transition: width .5s ease-in-out;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .dish__caption p {
-  font-size: .875rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: 100;
 }
 
 .dish__caption span {
@@ -870,6 +870,19 @@ hr {
 .dish:hover .dish__caption--checkBox {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+.contenair_prix {
+  font-size: .875rem;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.dish:hover .contenair_prix {
+  -webkit-transform: translateX(-250%);
+          transform: translateX(-250%);
 }
 
 .dish__caption--checkBox {
@@ -965,5 +978,40 @@ hr {
   margin-bottom: 20px;
   font-size: 1.5em;
   color: white;
+}
+
+.slide-bas02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenair_p {
+  width: 100%;
+  font-weight: lighter;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.dish:hover .contenair_p {
+  width: 70%;
+  -webkit-transition: width 500ms ease-in-out;
+  transition: width 500ms ease-in-out;
+}
+
+.contenair_p p {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contenair_prix span {
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=style.css.map */
