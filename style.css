@@ -1,4 +1,4 @@
-.accueil {
+.homepage {
   height: 100vh;
   width: 100%;
   background-color: #252525;
@@ -16,7 +16,7 @@
           align-items: center;
 }
 
-.accueil h1 {
+.homepage h1 {
   font-size: 120px;
   margin-bottom: 450px;
   opacity: 0;
@@ -290,11 +290,13 @@ body {
   color: white;
 }
 
-.Titre_Fonctionnement {
+.titrefonctionnement {
   padding-top: 40px;
   padding-left: 30px;
-  font-size: 1.5em;
-  font-weight: bolder;
+}
+
+.titrefonctionnement h1 {
+  font-size: 1.8em;
 }
 
 .btn1, .btn2, .btn3 {
@@ -459,12 +461,18 @@ body {
   padding: 3.125rem 1.25rem;
 }
 
+.restaurants h1 {
+  margin-bottom: 35px;
+  font-size: 1.8em;
+  padding-left: 6px;
+}
+
 .restaurants__title {
   padding-bottom: 1.25rem;
 }
 
 .Titre_Restaurants h1 {
-  padding: -3.125rem;
+  padding: 3.125rem;
 }
 
 .card {
@@ -493,7 +501,6 @@ body {
 .card:hover .card__tag {
   -webkit-transform-origin: right;
           transform-origin: right;
-  rotate: -8deg;
   background: #FF79DA;
   color: #99e2d0;
   -webkit-transform: scale(0.9);
@@ -541,10 +548,6 @@ img {
 }
 
 .card__body h3 {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: start;
-          flex-direction: start;
   margin-bottom: .3125rem;
   font-size: 1.3rem;
   font-weight: 700;
@@ -715,7 +718,6 @@ img {
 .background_menu {
   max-width: 1440px;
   position: relative;
-  display: flexbox;
   padding-bottom: 150px;
   border-top-right-radius: 92px;
   border-top-left-radius: 92px;
@@ -746,8 +748,12 @@ img {
 
 .contenair-titre-heart .card__heart--empty {
   position: unset;
-  pointer-events: none;
   font-size: 32px;
+  cursor: auto;
+}
+
+.contenair-titre-heart .card__heart--empty:hover {
+  opacity: 1;
 }
 
 h2 {
@@ -761,12 +767,13 @@ h2 {
 hr {
   display: block;
   color: #99E2D0;
-  width: 3px;
+  width: 0px;
   margin-left: 0em;
-  padding-right: 2.5em;
+  padding-right: 5em;
   border: #99E2D0;
   height: 7px;
   background-color: #99E2D0;
+  margin-bottom: 20px;
 }
 
 .btn_commander {
@@ -855,7 +862,7 @@ hr {
 }
 
 .dish__caption p {
-  font-size: 100;
+  font-weight: 100;
 }
 
 .dish__caption span {
@@ -925,7 +932,7 @@ hr {
 }
 
 .background_menu p {
-  font-size: 100;
+  font-weight: 100;
 }
 
 .dish__title {
