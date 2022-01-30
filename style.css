@@ -295,8 +295,9 @@ body {
   padding-left: 30px;
 }
 
-.titrefonctionnement h1 {
-  font-size: 1.8em;
+.titrefonctionnement h2 {
+  font-size: 1.6em;
+  font-weight: bolder;
 }
 
 .btn1, .btn2, .btn3 {
@@ -461,9 +462,10 @@ body {
   padding: 3.125rem 1.25rem;
 }
 
-.restaurants h1 {
+.restaurants h2 {
   margin-bottom: 35px;
-  font-size: 1.8em;
+  font-size: 1.6em;
+  font-weight: bolder;
   padding-left: 6px;
 }
 
